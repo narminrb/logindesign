@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6A6E71;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.left {
+  flex-basis: 55%;
+  margin: 10px auto;
+  height: 1100px; /* Ensure this is large enough to accommodate the image and content */
+  padding: 10px 50px;
+  position: relative;
+  background: url('../assets/cropback.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensure the content is pushed to the bottom */
+}
+
+
+.right {
+  flex-basis: 45%;
+}
+
+.right .right_head h1 {
+  font-family: sans-serif;
+  margin-top: 100px;
+  margin-left: 200px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+}
+
+.right .right_head p {
+  font-family: sans-serif;
+  margin-top: 20px;
+  margin-left: 100px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+}
+
+.left_head {
+  position: relative;
+  color: white;
+  padding: 20px;
+ 
+}
+
+.form_center {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.btn_groups {
+  margin: 16px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.primary_btn {
+  width: 100%;
+  background-color: black;
+  border: .5px solid rgb(53, 52, 52);
+  color: white;
+  padding: 25px;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.primary_btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.right-form-control {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.right-form-control h3 {
+  text-align: left;
+  margin-bottom: 4px;
+  color: rgb(187, 184, 184);
+  font-size: 25px;
+}
+
+.right-form-control input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: white;
+  border-color: none;
+  margin: 10px 0;
+  background-color: #1A1A1A;
+}
+
+.names_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.name_field {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.name_field:last-child {
+  margin-right: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: #1A1A1A;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #999;
+}
+
+.right-form-control h4 {
+  color: #7E7E7E;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.signin {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+  border: .5px solid rgb(53, 52, 52);
+  color: black;
+  font-size: 25px;
+  font-weight: 90px;
+  padding: 20px;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.login {
+  margin: 10px;
+  margin-left: 90px;
+  font-size: 20px;
+  color: #5A5A5A;
+}
+
+.left .left_head h4 {
+  color: white;
+  position: center;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 100px;
+}
+
+.left .left_head h1 {
+  color: white;
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 70px;
+  margin-bottom: 16px;
+}
+
+.left .left_head p {
+  color: white;
+  font-size: 25px;
+}
+
+.buttons {
+  margin: 26px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: black;
+}
+
+.primary_button1 {
+  width: 70%;
+  height: 70px;
+  background-color: white;
+  padding: 14px;
+  color: black;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.primary_button2 {
+  width: 70%;
+  height: 70px;
+  background-color: #232323;
+  padding: 14px;
+  color: black;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
